@@ -1,0 +1,145 @@
+.header {
+    line-height: 10;
+  
+}
+
+/* header-left */
+
+#header-left {
+    width: 25%;
+    text-align-last: left;
+}
+
+#header-left img{
+    cursor: pointer;
+}
+
+/* header-center */
+
+#header-center {
+    width: 50%;
+    text-align-last: center;
+}
+
+#header-center ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+#header-center ul li {
+    display: inline;
+    padding: 25px 15px 24px 15px;
+    color: hsl(228, 39%, 23%);
+    font-weight: 500;
+}
+
+#header-center ul li:hover {
+    color: hsl(227, 12%, 61%);
+    cursor: pointer;
+    
+}
+
+
+/* header-right */
+
+#header-right {
+    width: 25%;
+    text-align-last: right;
+}
+
+.button {
+    font-family: 'Be Vietnam', sans-serif;
+    padding: 13px 32px;
+    border-radius:25px;
+    background-color:hsl(12, 88%, 59%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+    opacity: 70%;
+    transform: translateY(-7px); 
+}
+
+
+/* header-mobile */
+
+.header-mobile {
+    display: none;
+}
+
+.header-wrapper {
+    line-height: 8;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#hamburger {
+    position: absolute;
+    right: 7%;
+    top: 45px;
+}
+
+#close {
+    display: none;
+    position: absolute;
+    right: 7%;
+    top: 45px;
+}
+
+
+#header-menu {
+    display: none;
+    position: absolute;
+    width: 90%;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    margin-top: 0;
+    left: 0;
+    right: 0;
+
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    z-index: 1;
+
+}
+
+#header-content {
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#header-menu ul {
+    list-style-type:none;
+    color: hsl(228, 39%, 23%);
+    padding-left: 0;
+    margin: 0;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 990px) {
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+        
+    }
+
+}

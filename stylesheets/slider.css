@@ -1,0 +1,103 @@
+.shadow-effect {
+    background-color: hsl(0, 0%, 98%);   
+    text-align: center;
+    padding: 0 15px 25px 15px;
+}
+
+.testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    padding: 9px 35px;
+    text-align: center;
+    color: hsl(228, 39%, 23%);
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  
+}
+#customers-testimonials .item {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    max-width: 90px;
+    margin: 0 auto;
+    position: relative;
+    top: -6vh;
+
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: hsl(12, 88%, 59%);
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+display: inline-block;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #fff;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.5);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 2px hsl(12, 88%, 59%);
+}
+
+.owl-carousel .owl-stage {
+    padding-top: 15px;
+}
+
+/* .......... */
+#test-h1 {
+    color: hsl(228, 39%, 23%);
+    font-size: 2.5em;
+}
+
+.what {
+    text-align: center;
+}
+
+.owl-dots {
+    display: none !important;
+}
+
+.what-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials {
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 990px) {
+    #test-h1 {
+        font-size: 2.2em;
+    }
+
+    .owl-dots {
+        display: block !important;
+    }
+}

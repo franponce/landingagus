@@ -1,0 +1,86 @@
+
+.whyus-left {
+    width: 58%;
+}
+
+.whyus-left h1 {
+    color: hsl(228, 39%, 23%);
+    font-size: 2.5em;
+}
+
+.whyus-p-container {
+    width: 80%;
+}
+
+.whyus-p-container p {
+    line-height: 1.8;
+}
+
+.whyus-right{
+    margin-top: 3em;
+}
+
+.whyus-right h3{
+    display: inline;
+    color: hsl(228, 39%, 23%);
+}
+
+.number {
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+    font-weight: 400;
+    padding: 8px 24px 8px 24px;
+    border-radius: 30px;
+    margin-right: 30px;
+}
+
+.whyus-right p{
+    margin-left: 100px;
+}
+
+.whyus-right-content-wrapper {
+    margin-bottom: 60px;
+}
+
+
+@media screen and (max-width: 990px) {
+    .whyus {
+        padding-left: 15px;
+        padding-right: 15px;
+      
+    }
+
+  
+    .whyus-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .whyus-p-container {
+        width: 100%;
+    }
+
+    .whyus-left h1 {
+        font-size: 2.2em;
+    }
+    
+    .number {
+        margin-right: 15px;
+    }
+
+    .whyus-right h3{
+        font-size: 16px;
+    }
+
+    .whyus-right p{
+        margin-left: 0;
+    }
+
+    .whyus-title-wrapper {
+        background-color: hsl(13, 100%, 96%);
+       
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 30px 0 0 30px;
+    }
+}

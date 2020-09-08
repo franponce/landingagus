@@ -1,0 +1,142 @@
+.footer {
+    background-color: hsl(233, 12%, 13%);
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-logo-wrapper {
+    margin-bottom: 80px;
+}
+
+.footer-icons-wrapper > svg {
+    margin-right: 12px;
+}
+
+.footer-icons-wrapper > svg:hover path{
+    fill:hsl(12, 88%, 59%);
+    cursor: pointer;
+}
+
+.footer-ul1 {
+    display: inline-block;
+    margin-right: 50%;
+}
+
+.footer-ul2 {
+    display: inline-block;
+    position: relative;
+    top: -42px;
+}
+
+.mid-footer-wrapper ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mid-footer-wrapper ul li {
+    margin-bottom: 20px;
+}
+
+.mid-footer-wrapper ul li:hover {
+    cursor: pointer;
+    color: hsl(12, 88%, 59%);
+}
+
+.mid-footer-wrapper {
+    color: #fff;
+}
+
+.right-footer-wrapper input[type=text] {
+    padding: 13px 32px;
+    border-radius:25px;
+    border: none;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 15px;
+    color: hsl(227, 12%, 61%);
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.right-footer-wrapper p {
+    font-size: 12px;
+    margin-left: 130px;
+}
+
+.attribution {
+    background-color: hsl(233, 12%, 13%);
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.attribution a {
+    color: hsl(227, 12%, 61%);
+}
+
+#copyright {
+    display: none;
+    font-size: 12px;
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    .footer1 {
+        order: 3;
+    }
+
+    .footer2 {
+        order: 2;
+    }
+
+    .footer3 {
+        order: 1;
+    }
+
+    .right-footer-wrapper p {
+        display: none;
+    }
+
+    #copyright {
+        display: block;
+    }
+
+    .mid-footer-wrapper {
+        text-align: left;
+        margin-left: 17%;
+        margin-right: 17%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .footer-icons-wrapper > svg {
+        margin-right: 30px;
+    }
+
+    .footer-icons-wrapper {
+        margin-right: -30px;
+        margin-bottom: 15px;
+    }
+
+    .footer-ul1 {
+        margin-right: 22%;
+    }
+
+    .footer-logo1 {
+        order: 2;
+    }
+
+    .footer-logo2 {
+        order: 1;
+    }
+}
