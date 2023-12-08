@@ -3,10 +3,60 @@
   
 }
 
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 30%; /* Ajusta según sea necesario */
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        width: 100%; /* En dispositivos móviles, ocupa todo el ancho */
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    }
+}
+
+.work-section h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
 /* header-left */
 
 #header-left {
-    width: 25%;
+    width: 50%;
     text-align-last: left;
 }
 
@@ -39,13 +89,6 @@
     
 }
 
-
-/* header-right */
-
-#header-right {
-    width: 25%;
-    text-align-last: right;
-}
 
 .button {
     font-family: 'Be Vietnam', sans-serif;

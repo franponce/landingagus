@@ -64,7 +64,6 @@ body {
 
 .main-container {
  
-    background-image: url(../images/bg-tablet-pattern.svg), url(../images/bg-tablet-pattern.svg);
     background-repeat: no-repeat, no-repeat;
     background-position:left 65vw top -19vh, left -25vw top 120vh;
     color: hsl(227, 12%, 61%);

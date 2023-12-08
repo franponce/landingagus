@@ -1,73 +1,85 @@
 .simplify {
-    background-color: hsl(12, 88%, 59%);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url(../images/bg-simplify-section-desktop.svg);
-    background-repeat: no-repeat;
-    background-position:left 22.5vw  top -13vh;
+  /* Agrega estilos según sea necesario para el contenedor principal */
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: left -5vw top;
 }
 
-.simplify-left {
-    width: 58%;
+.row.content-row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.simplify-left h1 {
-    color: #fff;
-    font-size: 2.5em;
+.col-6 {
+  width: 50%;
 }
 
+.simplify-left,
+.simplify-right {
+  padding: 20px; /* Ajusta el espaciado según sea necesario */
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  align-self: center; /* Centro el botón */
+  padding: 10px 20px; /* Ajusta el espaciado interno del botón según sea necesario */
+}
 
 .button-inverse {
-    font-family: 'Be Vietnam', sans-serif;
-    padding: 13px 32px;
-    border-radius:25px;
-    background-color:#fff;
-    border: none;
-    color: hsl(12, 88%, 59%);
-    cursor: pointer;
-    font-weight: 700;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-}
-
-.button-inverse:hover {
-    opacity: 70%;
-    transform: translateY(-7px); 
+  font-family: 'Be Vietnam', sans-serif;
+  padding: 13px 32px;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
 }
 
 .simp-btn {
-    position:relative;
-    top: 7vh; 
-    left: 80%;
+  position: center;
+  top: 7vh;
+  left: 50%;
 }
-
-
-
-
-
 
 @media screen and (max-width: 990px) {
-    .simplify-left h1 {
-        font-size: 2.2em;
-    }
+  .simplify-left h1 {
+      font-size: 2.2em;
+  }
 
-    .simplify-left {
-        width: 100%;
-    }
+  .simplify-left,
+  .simplify-right {
+      width: 100%; /* Ocupa todo el ancho en dispositivos más pequeños */
+  }
 
-    .simp-btn {
-        position:relative;
-        top: 0; 
-        left:0;
-    }
-
-    .simplify {
-        text-align: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-image: url(../images/bg-simplify-section-mobile.svg);
-        background-repeat: no-repeat;
-        background-position:left -5vw top;
-    }
+  .simp-btn {
+      position: center;
+      top: 0;
+      left: 0;
+      transform: none; /* Restablece la transformación para centrar el botón en dispositivos más pequeños */
+  }
 }
+
+@media screen and (max-width: 990px) {
+  .col-6 {
+      width: 100%; /* Cambia el ancho de las columnas al 100% en dispositivos más pequeños */
+  }
