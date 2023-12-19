@@ -1,0 +1,69 @@
+.sobremi-section {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 3em;
+    justify-content: center; /* Centra las secciones horizontalmente */
+    text-align: justify; /* Justifica el texto en la "Bio" */
+  }
+  
+  .sobremi-left-section {
+    width: calc(50% - 1em);
+    max-width: 500px;
+    margin: 2em 1em 2em 0; /* Ajusta los márgenes según tus necesidades */
+  }
+  
+  .sobremi-left-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .sobremi-left-section h2 {
+    font-size: 2.6em;
+    color: hsl(228, 39%, 23%);
+    margin-top: 1em;
+  }
+  
+  .sobremi-left-section p {
+    line-height: 1.8;
+  }
+  
+  .sobremi-right-section {
+    width: calc(50% - 1em);
+    max-width: 500px;
+    margin: 2em 0 2em 1em; /* Ajusta los márgenes según tus necesidades */
+    text-align: center;
+  }
+  
+  .sobremi-right-section h2 {
+    font-size: 2.6em;
+    color: hsl(228, 39%, 23%);
+  }
+  
+  .sobremi-right-section p {
+    text-align: justify;
+    line-height: 1.8;
+  }
+  
+  /* Añade estilos específicos para dispositivos móviles */
+  @media only screen and (max-width: 990px) {
+    .sobremi-section {
+      flex-direction: column;
+      align-items: center; /* Centra las secciones verticalmente */
+    }
+  
+    .sobremi-left-section,
+    .sobremi-right-section {
+      width: 100%;
+      max-width: none;
+      margin: 1em 0; /* Ajusta los márgenes superior e inferior según tus necesidades */
+    }
+  
+    .sobremi-left-section h2,
+    .sobremi-right-section h2 {
+      font-size: 2em;
+    }
+  }
+  

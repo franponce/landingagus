@@ -79,6 +79,20 @@ button {
   }
 }
 
+.social-icons {
+  margin-top: 1em; /* Ajusta el margen según tus necesidades */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 1em; /* Espacio entre los iconos, ajusta según tus necesidades */
+}
+
+.social-icons img {
+  width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
+  height: auto;
+}
+
 @media screen and (max-width: 990px) {
   .col-6 {
       width: 100%; /* Cambia el ancho de las columnas al 100% en dispositivos más pequeños */
