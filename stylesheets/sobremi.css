@@ -45,6 +45,7 @@
   .sobremi-right-section p {
     text-align: justify;
     line-height: 1.8;
+    margin: 20px;
   }
   
   /* Añade estilos específicos para dispositivos móviles */
